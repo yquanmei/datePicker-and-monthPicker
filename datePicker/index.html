@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+  <meta name="format-detection" content="telephone=no">
+  <title>datePicker</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    * {
+      box-sizing:border-box;
+    }
+    body{
+      padding:0;
+      margin:0;
+    }
+    /*.monthpicker {*/
+      /*border:1px solid #ccc;*/
+      /*border-radius:4px;*/
+      /*padding:5px;*/
+      /*height:24px;*/
+      /*line-height:24px;*/
+      /*width:100%;*/
+    /*}*/
+    /*.monthpicker:focus {*/
+      /*outline:0 none;*/
+      /*border:1px solid #1abc9c;*/
+    /*}*/
+
+</style>
+</head>
+<body>
+<div class="dom-agent">
+  <div class="ui-datepicker d-ui-datepicker"></div>
+
+  <!--<div class="ui-datepicker"></div>-->
+</div>
+
+<script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
+<script type="text/javascript" src="datePicker.js"></script>
+<script>
+  $(function() {
+    $.datePicker({
+      year: null,
+      month: null,
+      day: null,
+      dayCallback: dayCallback,
+      swiperDate: swiperDate
+    });
+
+    // 函数：点击了日期之后
+    function dayCallback(that, clickDay) {
+      console.log(clickDay);
+      var year = clickDay.year;
+      var month = clickDay.month;
+      var markDay = clickDay.markDay;
+      var txt = year + '年' + month + '月';
+      $('.d-time').text(txt);
+      var date = year + '-' + shuffle(month) + '-' + shuffle(markDay);
+      dateFlag = 1;
+      conditionForOtherPage(dateFlag);
+      getTheData(date);
+    }
+
+    // 函数：开始进入页面或滑动后获取到的日期
+    function swiperDate(year, month, date) {
+      var txt = year + '年' + month + '月';
+      $('.d-time').text(txt);
+    }
+  })
+
+</script>
+</body>
+</html>

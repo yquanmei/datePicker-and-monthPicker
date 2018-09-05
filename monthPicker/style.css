@@ -1,0 +1,119 @@
+.ui-monthpicker-wrapper{
+  width:100%;
+  font-size:16px;
+  color:#666;
+  /*box-shadow:2px 2px 8px 2px rgba(128,128,128,0.3);*/
+  display:none;
+  /*position:absolute;*/
+}
+.ui-monthpicker-wrapper-show{
+  display:block;
+}
+/*.ui-monthpicker-wrapper .ui-monthpicker-head{*/
+  /*padding:0 20px;*/
+  /*height:50px;*/
+  /*line-height:50px;*/
+  /*text-align:center;*/
+  /*background:#f0f0f0;*/
+  /*border-bottom:1px solid #ccc;*/
+  /*font-weight:bold;*/
+/*}*/
+/*.ui-monthpicker-wrapper .ui-monthpicker-btn{*/
+  /*font-family:serif;*/
+  /*font-size:20px;*/
+  /*width:20px;*/
+  /*height:50px;*/
+  /*line-height:50px;*/
+  /*color:#1abc9c;*/
+  /*text-align:center;*/
+  /*cursor:pointer;*/
+  /*text-decoration:none;*/
+/*}*/
+/*.ui-monthpicker-wrapper .ui-monthpicker-prev-btn{*/
+  /*float:left;*/
+/*}*/
+/*.ui-monthpicker-wrapper .ui-monthpicker-next-btn{*/
+  /*float:right;*/
+/*}*/
+/*.ui-monthpicker-wrapper .ui-monthpicker-body table{*/
+  /*width:100%;*/
+  /*border-collapse:collapse;*/
+/*}*/
+/*.ui-monthpicker-wrapper .ui-monthpicker-body th, .ui-monthpicker-wrapper .ui-monthpicker-body td{*/
+  /*height:30px;*/
+  /*text-align:center;*/
+/*}*/
+/*.ui-monthpicker-wrapper .ui-monthpicker-body th{*/
+  /*font-size:12px;*/
+  /*height:40px;*/
+  /*line-height:40px;*/
+/*}*/
+/*.ui-monthpicker-wrapper .ui-monthpicker-body td{*/
+  /*border:1px solid #f0f0f0;*/
+  /*font-size:10px;*/
+  /*width:14%;*/
+  /*cursor:pointer;*/
+/*}*/
+.ui-monthpicker-wrapper .ui-monthpicker-container-wrapper {
+  overflow:hidden;
+}
+.ui-monthpicker-wrapper .ui-monthpicker-container{
+  text-align:center;
+  background:#0dad89;
+  color:#fff;
+  padding:10px 0;
+  /*overflow:hidden;*/
+}
+.ui-monthpicker-wrapper ul,.ui-monthpicker-wrapper li{
+  padding:0;
+  margin:0;
+}
+.ui-monthpicker-wrapper li{
+  list-style-type:none;
+}
+.ui-monthpicker-wrapper .ui-monthpicker-head-container{
+  /*overflow:hidden;*/
+}
+.ui-monthpicker-wrapper .ui-monthpicker-head{
+  padding:0 0 10px 0;
+  text-align:center;
+  font-size:0;
+  white-space:nowrap;
+  transform:translate3d(-100%,0,0);
+}
+.ui-monthpicker-wrapper .ui-monthpicker-head li{
+  display:inline-block;
+  width:14.285714%;
+  font-size:14px;
+}
+.ui-monthpicker-wrapper .flex-con{
+  display: flex;
+}
+.ui-monthpicker-wrapper .flex-con li{
+  flex:1
+}
+.ui-monthpicker-wrapper .ui-monthpicker-main-container{
+  /*overflow:hidden;*/
+}
+.ui-monthpicker-wrapper .ui-monthpicker-body{
+  text-align:center;
+  font-size:0;
+  white-space:nowrap;
+  transform:translate3d(-100%,0,0);
+}
+.ui-monthpicker-wrapper .ui-monthpicker-body li {
+  display:inline-block;
+  width:14.285714%;
+  font-size:14px;
+}
+.ui-monthpicker-wrapper .ui-monthpicker-body li span{
+  display:inline-block;
+  width:25px;
+  height:25px;
+  line-height:25px;
+  border-radius:50%;
+}
+.ui-monthpicker-wrapper .ui-monthpicker-body li.active span {
+  background:#fff;
+  color:#0dad89;
+}
